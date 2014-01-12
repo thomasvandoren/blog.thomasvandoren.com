@@ -48,3 +48,8 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# Pelican files
+/output
+pelican.pid
+srv.pid
