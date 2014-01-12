@@ -6,7 +6,7 @@ AUTHOR = u'Thomas Van Doren'
 SITENAME = u"Thomas Van Doren's Blog"
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 
