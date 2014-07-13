@@ -1,7 +1,7 @@
 Better Puppet Module Development through Testing - CasitConf 2013
 #################################################################
 :date: 2013-04-06 14:20
-:author: thomas
+:author: Thomas Van Doren
 :category: tech
 :tags: casitconf, presentation, puppet
 :slug: better-puppet-module-development-through-testing-casitconf-2013
@@ -13,4 +13,4 @@ people and received a lot of feedback on my presentation.
 `Download the slides`_
 
 .. _Cascadia IT Conference: http://casitconf.org/casitconf13/
-.. _Download the slides: http://blog.thomasvandoren.com/wp-content/uploads/2013/04/puppet-testing-cascadia-2013-03-16.pdf
+.. _Download the slides: /presentations/puppet-testing-cascadia-2013-03-16.pdf
