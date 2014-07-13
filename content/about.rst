@@ -1,7 +1,7 @@
 About
 #####
 :date: 2011-02-10 05:11
-:author: admin
+:author: Thomas Van Doren
 :slug: about
 
 The life and times of Thomas Van Doren as written by Thomas Van Doren. I
