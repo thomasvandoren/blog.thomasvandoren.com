@@ -1,7 +1,7 @@
 European Trek
 #############
 :date: 2011-02-15 01:01
-:author: thomas
+:author: Thomas Van Doren
 :category: travel
 :tags: europe, torino, travel
 :slug: european-trek
@@ -18,5 +18,3 @@ All in all, I hope this trip will help me celebrate the culmination of
 my academic career while providing new experiences in new cultures. I
 had a great time in October when I got to spend four days in Torino,
 Italy (photos below) and this trip promises to be even better.
-
-[gallery]
