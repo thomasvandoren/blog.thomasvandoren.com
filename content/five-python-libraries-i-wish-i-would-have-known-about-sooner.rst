@@ -1,7 +1,7 @@
 Five python tips
 ################
 :date: 2011-09-22 20:49
-:author: admin
+:author: Thomas Van Doren
 :category: tech
 :tags: python, tech
 :slug: five-python-libraries-i-wish-i-would-have-known-about-sooner
@@ -11,12 +11,12 @@ around with it for five years prior to that. I am by no means an
 encyclopedia of python knowledge, but here are a few pointers that were
 not obvious to me when I was getting started.
 
-1. Use \ `contextlib.closing`_ to avoid leaking file pointers.
+1. Use `contextlib.closing`_ to avoid leaking file pointers.
 
-2. Use \ `OptionParser`_ (< 2.7) or `ArgumentParser`_ (>= 2.7) for easy
+2. Use `OptionParser`_ (< 2.7) or `ArgumentParser`_ (>= 2.7) for easy
 access to command line options and arguments.
 
-3. Use `pickle`_ to write/read data structures to/from file for easy
+3. Use `pickle`_ to write/read data structures to/from file for easy
 persistent storage.
 
 4. Use `subprocess`_ to make shell calls. This is especially useful when
