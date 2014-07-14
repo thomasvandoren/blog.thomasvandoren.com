@@ -8,3 +8,4 @@ I have arrived in NYC!
 
 .. image:: http://blog.thomasvandoren.com/wp-content/uploads/2011/09/2011-09-15_10-13-25_3-e1316099439945-577x1024.jpg
     :alt: NYC
+    :width: 480px
