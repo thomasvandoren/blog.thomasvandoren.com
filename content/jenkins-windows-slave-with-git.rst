@@ -88,6 +88,9 @@ General Advice when Setting Up Git
 -  Set the ``%HOME%/.ssh/config`` to specify which authentication to use:
 
 .. code-block:: conf
+    :anchorlinenos:
+    :linenos: table
+    :lineanchors: code-ssh-config
 
     Host github.com
         User git
@@ -116,6 +119,9 @@ General Advice when Setting Up Git
    with the one from cygwin, which recognizes file perms:
 
 .. code-block:: cmd
+    :anchorlinenos:
+    :linenos: table
+    :lineanchors: code-fixgit
 
     @rem From an Administrator cmd.exe
     @rem This works for 32bit Windows. Adjust accordingly for 64bit.

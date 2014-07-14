@@ -27,8 +27,11 @@ To remedy this problem so that windows would boot:
 -  Open command prompt.
 
 .. code-block:: cmd
+    :anchorlinenos:
+    :linenos: table
+    :lineanchors: code
 
-       bootrec.exe /fixmbr
+    bootrec.exe /fixmbr
 
 -  Reboot - it should boot directly to Windows 7.
 
