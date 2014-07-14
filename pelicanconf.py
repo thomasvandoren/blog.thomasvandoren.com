@@ -7,18 +7,15 @@ import os.path
 
 AUTHOR = u'Thomas Van Doren'
 SITENAME = u"Thomas Van Doren's Blog"
-SITEURL = 'http://thomasvandoren.com/blog'
+# SITEURL = 'http://thomasvandoren.com/blog'
 
 TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_DOMAIN = SITEURL
-FEED_ATOM = 'feeds/atom.xml'
-FEED_RSS = 'feeds/rss.xml'
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
 
 # Blogroll
 LINKS =  (
