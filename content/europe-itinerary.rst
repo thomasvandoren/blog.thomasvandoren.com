@@ -1,7 +1,7 @@
 Europe - Itinerary
 ##################
 :date: 2011-03-12 01:18
-:author: thomas
+:author: Thomas Van Doren
 :category: travel
 :tags: barcelona, europe, florence, paris, travel, zurich
 :slug: europe-itinerary
@@ -30,10 +30,4 @@ updates. I should have some sporadic internet access.
 I am really excited to leave! It will be quite a relief after completing
 school.
 
-[gallery]
-
-|image0|
-
-.. _earlier post: http://blog.thomasvandoren.com/archives/8
-
-.. |image0| image:: http://blog.thomasvandoren.com/wp-includes/js/tinymce/plugins/wpgallery/img/t.gif
+.. _earlier post: /european-trek.html
