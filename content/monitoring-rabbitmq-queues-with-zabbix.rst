@@ -1,13 +1,13 @@
 Monitoring RabbitMQ Queues with Zabbix
 ######################################
 :date: 2011-10-09 12:01
-:author: thomas
+:author: Thomas Van Doren
 :category: tech
-:tags: amqp, monitoring, rabbitmq, rabbitmq-server, tech, zabbix
+:tags: amqp, monitoring, rabbitmq, tech, zabbix
 :slug: monitoring-rabbitmq-queues-with-zabbix
 
 Recently I setup some monitoring on a `RabbitMQ`_ server
-using \ `Zabbix`_. This process is by no means difficult, but I thought
+using `Zabbix`_. This process is by no means difficult, but I thought
 it was worth sharing.
 
 I was looking for a solution that did not require additional plugins or
@@ -31,20 +31,13 @@ the one below. It assumes rabbitmqctl is at /usr/sbin/rabbitmqctl.
 
 .. raw:: html
 
-   <p>
-
-.. raw:: html
-
    <script src="https://gist.github.com/1273539.js?file=gistfile1.sh"></script>
-
-.. raw:: html
-
-   </p>
 
 After making the changes, bounce (restart) the zabbix-agent service on
 the rabbitmq server box.
 
 Sudo Permissions
+----------------
 
 The parameters won't work until the zabbix group is granted non-password
 sudo access. I chose to add a new file at
@@ -54,29 +47,13 @@ I added the following line to the end of /etc/sudoers:
 
 .. raw:: html
 
-   <p>
-
-.. raw:: html
-
    <script src="https://gist.github.com/1273547.js?file=gistfile1.sh"></script>
-
-.. raw:: html
-
-   </p>
 
 /etc/sudoers.d/rabbitmqserverstats contains:
 
 .. raw:: html
 
-   <p>
-
-.. raw:: html
-
    <script src="https://gist.github.com/1273541.js?file=gistfile1.sh"></script>
-
-.. raw:: html
-
-   </p>
 
 And with that, Zabbix should be able to monitor the some-queue and
 some-exchange statistics.
