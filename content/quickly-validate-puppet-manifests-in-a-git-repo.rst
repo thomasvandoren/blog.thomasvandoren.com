@@ -1,7 +1,7 @@
 Quickly validate puppet manifests in a git repo.
 ################################################
 :date: 2012-09-17 22:34
-:author: thomas
+:author: Thomas Van Doren
 :category: tech
 :tags: git, puppet, ruby, tech
 :slug: quickly-validate-puppet-manifests-in-a-git-repo
@@ -19,15 +19,7 @@ just provides some quick feedback for syntax errors.
 
 .. raw:: html
 
-   <p>
-
-.. raw:: html
-
    <script src="https://gist.github.com/3736299.js?file=post-commit.rb"></script>
-
-.. raw:: html
-
-   </p>
 
 https://gist.github.com/3736299#file_post_commit.rb
 
