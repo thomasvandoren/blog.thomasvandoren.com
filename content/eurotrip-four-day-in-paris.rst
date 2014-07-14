@@ -1,7 +1,7 @@
-Eurotrip - Four day in Paris
-############################
+Eurotrip - Four days in Paris
+#############################
 :date: 2011-04-10 10:11
-:author: thomas
+:author: Thomas Van Doren
 :category: travel
 :tags: europe, eurotrip, paris
 :slug: eurotrip-four-day-in-paris
@@ -33,5 +33,3 @@ many bones were down there. It definitely made me cringe.
 All in all, Paris was a great experience. I feel like I got a quick
 revue of the city and its culture (including the nightlife). But I will
 have to return someday to see the many things I missed.
-
-[gallery order="DESC"]

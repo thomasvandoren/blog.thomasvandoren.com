@@ -1,7 +1,7 @@
 Eurotrip - Three days in Zurich
 ###############################
 :date: 2011-03-21 05:15
-:author: thomas
+:author: Thomas Van Doren
 :category: travel
 :tags: clubs, europe, eurotrip, keyboard, zurich
 :slug: eurotrip-three-days-in-zurich
@@ -44,5 +44,3 @@ Overall, I enjoyed my time in Zurich. I will get another
 afternoon/evening there at the end of my trip. It is a beautiful place.
 Though, I don't think I could visit more than a couple days without a
 very large budget.
-
-[gallery]

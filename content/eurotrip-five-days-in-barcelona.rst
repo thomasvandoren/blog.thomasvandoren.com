@@ -1,7 +1,7 @@
 Eurotrip - Five Days in Barcelona
 #################################
 :date: 2011-04-03 07:18
-:author: thomas
+:author: Thomas Van Doren
 :category: travel
 :tags: barcelona, europe, eurotrip
 :slug: eurotrip-five-days-in-barcelona
@@ -42,5 +42,3 @@ afternoon.
 Overall I really enjoyed my time in Barcelona. I was able to see some
 art and architecture, shop for trinkets, people watch, dance all night,
 and eat Paella. I will probably have to visit again; I had a lot of fun.
-
-[gallery order="DESC"]

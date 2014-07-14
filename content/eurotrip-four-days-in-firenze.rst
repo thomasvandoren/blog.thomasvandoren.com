@@ -1,7 +1,7 @@
 Eurotrip - Four Days in Firenze
 ###############################
 :date: 2011-03-26 10:47
-:author: thomas
+:author: Thomas Van Doren
 :category: travel
 :tags: art, europe, eurotrip, firenze, florence, travel, wine
 :slug: eurotrip-four-days-in-firenze
@@ -72,5 +72,3 @@ tourists, but it is a place that I would like to visit again. There are
 so many incredible landmarks and museums that it was hard to see
 everything in four days. With such great sights and food, it is no
 wonder that so many people go there!
-
-[gallery]
