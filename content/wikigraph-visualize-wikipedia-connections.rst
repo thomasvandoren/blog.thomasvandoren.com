@@ -1,17 +1,17 @@
 WikiGraph - Visualize Wikipedia Connections
 ###########################################
 :date: 2011-03-11 03:17
-:author: thomas
-:category: projects, tech
+:author: Thomas Van Doren
+:category: tech
 :tags: flash, mysql, php, projects, wikigraph, wikipedia
 :slug: wikigraph-visualize-wikipedia-connections
 
 `WikiGraph`_ helps users visualize connections among Wikipedia articles.
 It uses links within articles to decide how articles relate to each
-other. It is a Flash application with a PHP data services api, and a
-MySQL database. The database contains about \ **8.3 million articles**
-with \ **800 million links**. Seven UW CSE students (including me)
-worked on WikiGraph as part of the Winter 2011 \ `Software Engineering`_
+other. It is a Flash application with a PHP data services api, and a
+MySQL database. The database contains about **8.3 million articles**
+with **800 million links**. Seven UW CSE students (including me)
+worked on WikiGraph as part of the Winter 2011 `Software Engineering`_
 class.
 
 http://wikigraph.cs.washington.edu/
@@ -23,13 +23,13 @@ The 24 most significant relationships for an article are shown in a
 graph. The strength of a relationship is determined by link
 relationships and the length of the article (longer articles are more
 likely to be real articles as opposed to long pages of links). Mutual
-relationships are considered the strongest (article a links to article b
+relationships are considered the strongest (article a links to article b
 and vice-a-versa) followed by outbound relations and then inbound
 relations.
 
 It can take a long time to determine the 24 most significant
 relationships for some articles. For example, the number `0`_
-article has hundreds of thousands of inbound links (articles that link
+article has hundreds of thousands of inbound links (articles that link
 to the number 0 article). It takes over 30 seconds to pull all those
 connections from the database and then sort them in order of
 significance.
@@ -49,7 +49,7 @@ initially so that every request would return the most significant
 connections quickly.
 
 We used Google Code to develop the source code, track issues, and
-create documentation in the wiki.
+create  documentation in the wiki.
 
 http://code.google.com/p/wiki-map-uw-cse/
 
@@ -90,8 +90,8 @@ The MySQL Database
 Our database consumes quite a bit of space, so we opted to use an Amazon
 Web Service Relational Database Service. Our class was able to provide
 grants to use the AWS services. We were very pleased with the AWS
-experience. It allowed us to moderate how much space and memory we used
-for the database.  That was useful when we wanted to perform
+experience. It allowed us to moderate how much space and memory we used
+for the database. That was useful when we wanted to perform
 administrative actions on the db. We could upgrade to a high memory,
 fast CPU instance while the admin operations took place, and then
 downgrade to a cheaper low memory, standard CPU for normal use.
