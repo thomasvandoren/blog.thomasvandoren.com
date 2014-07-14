@@ -1,9 +1,9 @@
 Fixing Master Boot Record on Windows 7
 ######################################
 :date: 2011-10-15 17:14
-:author: thomas
+:author: Thomas Van Doren
 :category: tech
-:tags: bootrec, bootrec.exe, dual boot, fixmbr, master boot record, tech, windows, windows 7
+:tags: dual boot, tech, windows
 :slug: fixing-master-boot-record-on-windows-7
 
 I recently removed the linux partition from my desktop. I had a linux
@@ -25,7 +25,8 @@ To remedy this problem so that windows would boot:
 -  Reboot - if it still doesn't work, return to 'System Recovery
    Options' menu.
 -  Open command prompt.
--  ::
+
+.. code-block:: cmd
 
        bootrec.exe /fixmbr
 
