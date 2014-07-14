@@ -1,9 +1,9 @@
 Jenkins Windows Slave with Git
 ##############################
 :date: 2011-09-27 23:07
-:author: thomas
+:author: Thomas Van Doren
 :category: tech
-:tags: cygwin, git, jenkins, jenkins slave, msysgit, ssh, tech, windows, windows slave
+:tags: cygwin, git, jenkins, msysgit, ssh, tech, windows
 :slug: jenkins-windows-slave-with-git
 
 There are some articles out there about setting up Jenkins slaves on
@@ -28,7 +28,7 @@ Setup Jenkins Slave
    -  Name: win7-thomas
    -  # of executors: 4 (one executor per cpu is not a bad ratio)
    -  Remote FS Root: c:\\Jenkins\\Slaves
-   -  Labels: windows blackberry (this box is good for building the
+   -  Labels: windows blackberry (this box is good for building the
       blackberry projects and is a windows box)
    -  Usage: Utilize this slave as much as possible
    -  Launch method: Launch slave agents via Java Web Start
@@ -36,12 +36,12 @@ Setup Jenkins Slave
 
 -  After saving the new node, open it from the 'nodes' screen, and
    select 'Launch'.
--  Save the slave-agent.jnlp in a decent folder (like c:\\Jenkins).
+-  Save the slave-agent.jnlp in a decent folder (like c:\\Jenkins).
 -  Open the slave-agent.jnlp. Double clicking worked for me, but you
    might need to use something like:
 
-   -  javaws
-      http://jenkins-hostname/computer/win7-thomas/slave-agent.jnlp
+   -  ``javaws
+      http://jenkins-hostname/computer/win7-thomas/slave-agent.jnlp``
    -  Or, one of the other suggestions Jenkins shows.
 
 -  This should popup a window that says 'Connected'. Goto 'File' >
@@ -59,67 +59,47 @@ Setup Jenkins Slave
 Setup Git
 ---------
 
-.. raw:: html
-
-   <div>
-
 It is advisable to run the Jenkins Slave service as a pre-defined user,
 as opposed to the SYSTEM user. However, if the Jenkins Slave service is
 running as the SYSTEM user, the following will help emulate the
 environment that Jenkins will use when building.
 
-.. raw:: html
-
-   </div>
-
--  To run commands as the SYSTEM user, you can use psexec.exe from
+-  To run commands as the SYSTEM user, you can use ``psexec.exe`` from
    `SysInternals`_.
 
-   -  From an Administrator cmd.exe prompt, psexec -i -s cmd.exe will
+   -  From an Administrator cmd.exe prompt, ``psexec -i -s cmd.exe`` will
       open a new shell as the SYSTEM user.
 
 General Advice when Setting Up Git
 ----------------------------------
 
--  Define a HOME env var equal to %USERPROFILE%.
--  Create *passphrase-less* rsa keys and put them in %HOME%/.ssh. These
+-  Define a ``HOME`` env var equal to ``%USERPROFILE%``.
+-  Create *passphrase-less* rsa keys and put them in ``%HOME%/.ssh``. These
    keys should be setup on whatever server hosts the Git repos. In
    GitHub, for example, you would need to add the keys to your account.
--  Do an initial ssh git@github.com to add GitHub to the known\_hosts.
--  Get rid of any GIT\_SSH env vars if using the default ssh client for
-   auth (as opposed to plink.exe, etc). GIT\_SSH=c:\\...\\plink.exe may
+-  Do an initial ``ssh git@github.com`` to add GitHub to the known\_hosts.
+-  Get rid of any ``GIT_SSH`` env vars if using the default ssh client for
+   auth (as opposed to plink.exe, etc). ``GIT_SSH=c:\...\plink.exe`` may
    exist if you have previously used putty/pageant/TortoiseGit/etc to
    access Git repos.
--  ssh git@github.com (or wherever your repo is) is very useful for
-   debugging. One to three -v flags (i.e. ssh -vv git@github.com) may be
+-  ``ssh git@github.com`` (or wherever your repo is) is very useful for
+   debugging. One to three -v flags (i.e. ``ssh -vv git@github.com``) may be
    added to help debug the connection process.
--  Set the %HOME%/.ssh/config to specify which authentication to use:
+-  Set the ``%HOME%/.ssh/config`` to specify which authentication to use:
 
-.. raw:: html
-
-   <div>
-
-::
+.. code-block:: conf
 
     Host github.com
         User git
         Hostname github.com
         PreferredAuthentications publickey
 
-.. raw:: html
-
-   </div>
-
 -  If you see the following error message and your files do have the
-   correct perms (0600), then you are suffering from a \ `bug in the
-   msysgit ssh`_ executable. Unix permissions (0644) don't map to NTFS
+   correct perms (0600), then you are suffering from a `bug in the
+   msysgit ssh`_ executable. Unix permissions (0644) don't map to NTFS
    ACLs. Msys just fakes the behavior of chmod, but it can't fake a
    chmod to a restrictive enough permissions set. Steps to fix are
    below.
-
-.. raw:: html
-
-   <div>
 
 ::
 
@@ -131,23 +111,11 @@ General Advice when Setting Up Git
     This private key will be ignored.
     bad permissions: ignore key: /path/to/key
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
--  Assuming cygwin is installed at c:\\cygwin and msysgit is installed
-   at c:\\progra~1\\Git, this will replace the ssh executable in msysgit
+-  Assuming cygwin is installed at ``c:\cygwin`` and msysgit is installed
+   at ``c:\progra~1\Git``, this will replace the ssh executable in msysgit
    with the one from cygwin, which recognizes file perms:
 
-.. raw:: html
-
-   <div>
-
-::
+.. code-block:: cmd
 
     @rem From an Administrator cmd.exe
     @rem This works for 32bit Windows. Adjust accordingly for 64bit.
@@ -155,22 +123,6 @@ General Advice when Setting Up Git
     ren "C:\Program Files\Git\bin\ssh.exe" "C:\Program Files\Git\bin\ssh.bak.exe"
     copy "C:\cygwin\bin\ssh.exe" "C:\Program Files\Git\bin\ssh.exe"
     copy "C:\cygwin\bin\cyg*.dll" "C:\Program Files\Git\bin\"
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
-.. raw:: html
-
-   </p>
 
 Some Sources
 ------------
@@ -180,29 +132,9 @@ Some Sources
 -  `GitHub's Windows Git Setup`_
 -  `University of Cambridge - ssh authorized\_keys HOWTO`_
 
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
-
-*Appreciated feedback from `George Reilly`_*
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div>
+*Appreciated feedback from* `George Reilly`_.
 
 **Update:** Git section posted on `Cozi Tech`_ blog!
-
-.. raw:: html
-
-   </div>
 
 .. _Git plugin: https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin
 .. _SysInternals: http://technet.microsoft.com/en-us/sysinternals/bb545027
