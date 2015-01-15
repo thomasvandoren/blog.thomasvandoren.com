@@ -4,6 +4,14 @@ About
 :author: Thomas Van Doren
 :slug: about
 
-The life and times of Thomas Van Doren as written by Thomas Van Doren. I
-am interested in tech, travel, life, and random other topics. I expect
-to write about things of that nature.
+Thomas Van Doren is a software engineer at Cray, Inc. in Seattle where he work on Chapel_. Previously he worked at Cozi Inc. and graduated from the University of Washington. Thomas loves open source software, automation, and working on large scale problems!
+
+Find me on:
+
+* `GitHub <https://github.com/thomasvandoren>`_
+* `LinkedIn <https://www.linkedin.com/in/thomasvandoren>`_
+* `Facebook thomasvandoren <https://www.facebook.com/thomasvandoren>`_
+* `Google+ <https://plus.google.com/+ThomasVanDoren>`_
+* `Twitter <https://twitter.com/thomasvandoren>`_
+
+.. _Chapel: http://chapel-lang.org/
