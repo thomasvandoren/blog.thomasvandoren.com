@@ -4,13 +4,13 @@ About
 :author: Thomas Van Doren
 :slug: about
 
-Thomas Van Doren is a software engineer at Cray, Inc. in Seattle where he work on Chapel_. Previously he worked at Cozi Inc. and graduated from the University of Washington. Thomas loves open source software, automation, and working on large scale problems!
+Thomas Van Doren is a software engineer at Cray, Inc. in Seattle where he works on Chapel_. Previously he worked at Cozi Inc. and graduated from the University of Washington. Thomas loves open source software, automation, and working on large scale problems!
 
-Find me on:
+Find him on:
 
 * `GitHub <https://github.com/thomasvandoren>`_
 * `LinkedIn <https://www.linkedin.com/in/thomasvandoren>`_
-* `Facebook thomasvandoren <https://www.facebook.com/thomasvandoren>`_
+* `Facebook <https://www.facebook.com/thomasvandoren>`_
 * `Google+ <https://plus.google.com/+ThomasVanDoren>`_
 * `Twitter <https://twitter.com/thomasvandoren>`_
 
