@@ -6,6 +6,20 @@ The source for: [blog.thomasvandoren.com](http://blog.thomasvandoren.com/)
 Development
 -----------
 
+Clone the site and pelican-themes:
+
+```bash
+git clone git@github.com:thomasvandoren/blog.thomasvandoren.com.git
+git clone https://github.com/getpelican/pelican-themes
+cd blog.thomasvandoren.com
+```
+
+Install python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
 When developing the site:
 
 ```bash
