@@ -40,7 +40,7 @@ Publishing the site:
 make publish
 
 # Deploy the site
-make ssh_upload SSH_USER=<username> SSH_TARGET_DIR='~/path/to/target'
+make clean s3_upload
 ```
 
 License
