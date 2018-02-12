@@ -17,7 +17,7 @@ cd blog.thomasvandoren.com
 Install python packages:
 
 ```bash
-pip install -r requirements.txt
+pipenv install
 ```
 
 When developing the site:
