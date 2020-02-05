@@ -114,15 +114,7 @@ Capturing this flag started with capturing the `2 of Diamonds <http://tinkerfair
     |   256 08:7a:50:9d:67:c9:25:20:89:07:85:98:c0:34:9c:9f (ECDSA)
     |_  256 ad:df:2c:68:bc:12:49:75:c6:d4:05:5c:f5:d2:6b:be (ED25519)
 
-That was an OpenBSD 6.6 system. The ``ken`` user was in the wheel group and Ken's password is `Ken Thompson's Unix password <https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html>`_. 
-
-::
-
-    $ ssh srb@target # password: bourne
-    $ groups ken
-    users wheel
-
-Signing in as Ken, we were able to exploit `a privilege escalation <https://www.openwall.com/lists/oss-security/2019/12/11/9>`_ to gain root access to the system, and after some searching found a bare git repo at ``/root/hai``. There is also `a RCE in OpenSMTPB in this version of OpenBSD <https://www.openwall.com/lists/oss-security/2020/01/28/3>`_ that would have enabled root access.
+That was an OpenBSD 6.6 system. The ``ken`` user was in the wheel group and Ken's password is `Ken Thompson's Unix password <https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html>`_. Signing in as Ken, we were able to exploit `a privilege escalation <https://www.openwall.com/lists/oss-security/2019/12/11/9>`_ to gain root access to the system (signing in as any user would have worked), and after some searching found a bare git repo at ``/root/hai``. There is also `a RCE in OpenSMTPd in this version of OpenBSD <https://www.openwall.com/lists/oss-security/2020/01/28/3>`_ that would have enabled root access.
 
 ::
 
@@ -157,9 +149,9 @@ We copied that bare git repo back to the jump box and then were able to generate
 Ace of Spades
 -------------
 
-Another file we found while searching the OpenBSD system was ``/etc/flag``, which was a hexdump of a PNG file::
+Another file we found while searching the OpenBSD system was ``/etc/flag``, which was ``hexdump -C`` output of a PNG file::
 
-    $ head -1 /etc/flag # hexdump -C of a PNG file
+    $ head -1 /etc/flag
     00000000  89 50 4e 47 0d 0a 1a 0a  00 00 00 0d 49 48 44 52  |.PNG........IHDR|
     ...
 
@@ -167,7 +159,6 @@ We copied that to kali as `etcflag` and then used this python code to remove eve
 
 .. code-block:: python
 
-    lines = []
     with open('etcflag') as fp:
         with open('etcflag.just_hex', 'w') as fp2:
             for l in fp.readlines():
