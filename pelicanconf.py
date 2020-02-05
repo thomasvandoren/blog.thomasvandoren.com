@@ -6,8 +6,7 @@ import os.path
 
 
 AUTHOR = u'Thomas Van Doren'
-SITENAME = u"Thomas Van Doren's Blog"
-# SITEURL = 'http://thomasvandoren.com/blog'
+SITENAME = u"thomasvandoren.com"
 
 TIMEZONE = 'US/Pacific'
 

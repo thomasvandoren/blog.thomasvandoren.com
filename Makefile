@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-S3_BUCKET=blog.thomasvandoren.com
+S3_BUCKET=thomasvandoren.com
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -61,6 +61,7 @@ stopserver:
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	cp error.html googlec4ba6ee14c6d55e5.html $(OUTPUTDIR)
 
 s3_upload: publish
 	aws s3 sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --delete

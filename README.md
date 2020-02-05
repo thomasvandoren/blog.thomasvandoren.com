@@ -1,7 +1,7 @@
-blog.thomasvandoren.com
-=======================
+thomasvandoren.com
+==================
 
-The source for: [blog.thomasvandoren.com](http://blog.thomasvandoren.com/)
+The source for: [thomasvandoren.com](https://thomasvandoren.com/)
 
 Development
 -----------

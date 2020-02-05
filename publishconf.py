@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://blog.thomasvandoren.com'
+SITEURL = 'https://thomasvandoren.com'
 RELATIVE_URLS = False
 
 FEED_ATOM = 'feeds/atom.xml'
@@ -20,7 +20,4 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
-
-#DISQUS_SITENAME = ""
-GOOGLE_ANALYTICS = "UA-21325965-1"
+GOOGLE_ANALYTICS = "UA-34881097-1"
