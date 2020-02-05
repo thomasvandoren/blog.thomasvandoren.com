@@ -17,20 +17,11 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 
-# Blogroll
-LINKS =  (
-    ('Chapel', 'http://chapel.cray.com/'),
-    ('Cray Blog', 'http://blog.cray.com/'),
-    ('Pelican', 'http://getpelican.com/'),
-    ('Python.org', 'http://python.org/'),
-    ('Jinja2', 'http://jinja.pocoo.org/'),
-)
-
 # Social widget
 SOCIAL = (
     ('GitHub', 'https://github.com/thomasvandoren'),
     ('LinkedIn', 'https://www.linkedin.com/in/thomasvandoren'),
-    ('Facebook', 'https://facebook.com/thomasvandoren'),
+    ('Twitter', 'https://twitter.com/thomasvandoren'),
 )
 
 DEFAULT_PAGINATION = False
