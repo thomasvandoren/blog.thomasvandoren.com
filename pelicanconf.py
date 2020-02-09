@@ -4,33 +4,34 @@ from __future__ import unicode_literals
 
 import os.path
 
+AUTHOR = 'Thomas Van Doren'
+SITENAME = 'thomasvandoren.com'
+SITEURL = ''
 
-AUTHOR = u'Thomas Van Doren'
-SITENAME = u"thomasvandoren.com"
+PATH = 'content'
 
 TIMEZONE = 'US/Pacific'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
-# Social widget
 SOCIAL = (
     ('GitHub', 'https://github.com/thomasvandoren'),
     ('LinkedIn', 'https://www.linkedin.com/in/thomasvandoren'),
     ('Twitter', 'https://twitter.com/thomasvandoren'),
 )
 
-DEFAULT_PAGINATION = False
-
 STATIC_PATHS = [
     'images',
     'presentations',
 ]
 
-THEME = os.path.expanduser("~/src/pelican-themes/tuxlite_tbs")
+DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+THEME = os.path.expanduser("~/src/pelican-themes/tuxlite_tbs")

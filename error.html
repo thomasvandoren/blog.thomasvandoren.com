@@ -4,6 +4,13 @@
 <title>Error - thomasvandoren.com</title>
 <head>
 <body>
-Boom, that's a failure.
+Boom, that's a failure. Redirecting <a href="/">home</a> shortly...
+<script>(function() {
+    if (document.location.pathname !== "/") {
+        window.setTimeout(function() {
+            window.location = document.location.origin;
+        }, 3000);
+    }
+})();</script>
 </body>
 </html>
