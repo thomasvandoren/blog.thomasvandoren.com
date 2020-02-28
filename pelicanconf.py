@@ -34,4 +34,4 @@ STATIC_PATHS = [
 
 DEFAULT_PAGINATION = 10
 
-THEME = "pelican-themes/tuxlite_tbs"
+THEME = os.path.expanduser("~/src/pelican-themes/tuxlite_tbs")
