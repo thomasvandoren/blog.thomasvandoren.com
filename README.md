@@ -9,9 +9,9 @@ Development
 Clone the site and pelican-themes:
 
 ```bash
-git clone git@github.com:thomasvandoren/blog.thomasvandoren.com.git
+git clone thomasvandoren/thomasvandoren.com
+cd thomasvandoren.com
 git clone https://github.com/getpelican/pelican-themes
-cd blog.thomasvandoren.com
 ```
 
 Install python packages:

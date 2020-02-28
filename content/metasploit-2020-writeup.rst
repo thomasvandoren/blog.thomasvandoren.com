@@ -8,9 +8,10 @@ Metasploit community CTF 2020 write up
 
 This past weekend I worked on the `Metasploit community CTF <https://blog.rapid7.com/2020/01/15/announcing-the-2020-metasploit-community-ctf/>`_ with the `CTF_Circle team <https://twitter.com/CTF_Circle>`_. As a group we finished 9th overall! The rest of this post includes a write up of three flags the team captured (out of the seven total). Capturing all three of these flags was a collaborative team effort, which is one of the highlights for me of working with CTF_Circle.
 
-.. raw:: html
-
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">So proud of all our teammates, helping each other to 9th place in <a href="https://twitter.com/metasploit?ref_src=twsrc%5Etfw">@metasploit</a> community CTF!<br><br>s/o to <a href="https://twitter.com/echosystemname?ref_src=twsrc%5Etfw">@echosystemname</a> <a href="https://twitter.com/grenlith?ref_src=twsrc%5Etfw">@grenlith</a> <a href="https://twitter.com/thomasvandoren?ref_src=twsrc%5Etfw">@thomasvandoren</a> <a href="https://twitter.com/SarahDVictoria?ref_src=twsrc%5Etfw">@SarahDVictoria</a> <a href="https://twitter.com/nemesis09?ref_src=twsrc%5Etfw">@nemesis09</a> <a href="https://t.co/Sm8WuEwOCZ">pic.twitter.com/Sm8WuEwOCZ</a></p>&mdash; CTF Circle (@CTF_Circle) <a href="https://twitter.com/CTF_Circle/status/1224382463599767552?ref_src=twsrc%5Etfw">February 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+.. image:: /images/metasploit-2020-tweet.png
+    :target: https://twitter.com/CTF_Circle/status/1224382463599767552
+    :width: 75%
+    :align: center
 
 Background
 ----------
