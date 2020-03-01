@@ -31,7 +31,7 @@ the one below. It assumes rabbitmqctl is at /usr/sbin/rabbitmqctl.
 
 .. raw:: html
 
-   <script src="https://gist.github.com/1273539.js?file=gistfile1.sh"></script>
+   <script src="https://gist.github.com/thomasvandoren/1273539.js?file=gistfile1.sh"></script>
 
 After making the changes, bounce (restart) the zabbix-agent service on
 the rabbitmq server box.
@@ -47,13 +47,13 @@ I added the following line to the end of /etc/sudoers:
 
 .. raw:: html
 
-   <script src="https://gist.github.com/1273547.js?file=gistfile1.sh"></script>
+   <script src="https://gist.github.com/thomasvandoren/1273547.js?file=gistfile1.sh"></script>
 
 /etc/sudoers.d/rabbitmqserverstats contains:
 
 .. raw:: html
 
-   <script src="https://gist.github.com/1273541.js?file=gistfile1.sh"></script>
+   <script src="https://gist.github.com/thomasvandoren/1273541.js?file=gistfile1.sh"></script>
 
 And with that, Zabbix should be able to monitor the some-queue and
 some-exchange statistics.

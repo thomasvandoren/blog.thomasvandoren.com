@@ -19,9 +19,9 @@ just provides some quick feedback for syntax errors.
 
 .. raw:: html
 
-   <script src="https://gist.github.com/3736299.js?file=post-commit.rb"></script>
+   <script src="https://gist.github.com/thomasvandoren/3736299.js?file=post-commit.rb"></script>
 
-https://gist.github.com/3736299#file_post_commit.rb
+https://gist.github.com/thomasvandoren/3736299#file_post_commit.rb
 
 .. _Travis: http://travis-ci.org/
 .. _Jenkins: http://jenkins-ci.org/
