@@ -80,7 +80,7 @@ function handlePrefix(prefix) {
 }
 
 function addSecHeaders(resp) {
-  resp.headers.set('Content-Security-Policy', `script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js https://gist.github.com/thomasvandoren/ https://static.cloudflareinsights.com; object-src 'none'; frame-ancestors 'none';`);
+  resp.headers.set('Content-Security-Policy', `script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js https://gist.github.com/thomasvandoren/ https://static.cloudflareinsights.com 'sha256-DnOkNPnjiNaUwdRbHUnxD3E2v2Tbb4V2nIYg/YvRKdw='; object-src 'none'; frame-ancestors 'none';`);
   resp.headers.set('X-Frame-Options', 'DENY');
   return resp;
 }
