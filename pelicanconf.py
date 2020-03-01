@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 import os.path
 
-AUTHOR = 'Thomas Van Doren'
-SITENAME = 'thomasvandoren.com'
+AUTHOR = 'tvd'
+SITENAME = 'tvd.dev'
 SITEURL = ''
 
 PATH = 'content'

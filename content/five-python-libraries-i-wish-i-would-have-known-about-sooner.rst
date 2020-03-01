@@ -1,7 +1,7 @@
 Five python tips
 ################
 :date: 2011-09-22 20:49
-:author: Thomas Van Doren
+:author: tvd
 :category: tech
 :tags: python, tech
 :slug: five-python-libraries-i-wish-i-would-have-known-about-sooner

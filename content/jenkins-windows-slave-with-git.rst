@@ -1,7 +1,7 @@
 Jenkins Windows Slave with Git
 ##############################
 :date: 2011-09-27 23:07
-:author: Thomas Van Doren
+:author: tvd
 :category: tech
 :tags: cygwin, git, jenkins, msysgit, ssh, tech, windows
 :slug: jenkins-windows-slave-with-git

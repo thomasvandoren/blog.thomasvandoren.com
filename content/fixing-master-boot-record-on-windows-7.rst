@@ -1,7 +1,7 @@
 Fixing Master Boot Record on Windows 7
 ######################################
 :date: 2011-10-15 17:14
-:author: Thomas Van Doren
+:author: tvd
 :category: tech
 :tags: dual boot, tech, windows
 :slug: fixing-master-boot-record-on-windows-7

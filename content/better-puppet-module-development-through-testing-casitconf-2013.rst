@@ -1,7 +1,7 @@
 Better Puppet Module Development through Testing - CasitConf 2013
 #################################################################
 :date: 2013-04-06 14:20
-:author: Thomas Van Doren
+:author: tvd
 :category: tech
 :tags: casitconf, presentation, puppet
 :slug: better-puppet-module-development-through-testing-casitconf-2013

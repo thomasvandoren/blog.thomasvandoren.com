@@ -1,7 +1,7 @@
 Monitoring RabbitMQ Queues with Zabbix
 ######################################
 :date: 2011-10-09 12:01
-:author: Thomas Van Doren
+:author: tvd
 :category: tech
 :tags: amqp, monitoring, rabbitmq, tech, zabbix
 :slug: monitoring-rabbitmq-queues-with-zabbix

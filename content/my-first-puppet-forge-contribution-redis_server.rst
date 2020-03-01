@@ -1,7 +1,7 @@
 My first puppet forge contribution: redis
 #########################################
 :date: 2012-05-15 01:58
-:author: Thomas Van Doren
+:author: tvd
 :category: tech
 :tags: github, puppet, redis, tech, travis-ci
 :slug: my-first-puppet-forge-contribution-redis_server

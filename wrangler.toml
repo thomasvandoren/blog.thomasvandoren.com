@@ -1,0 +1,10 @@
+name = "tvddev"
+type = "webpack"
+account_id = "9108b97dd8df59ec46f276e892c7d76a"
+workers_dev = false
+route = "tvd.dev/*"
+zone_id = "348ab020bf346c816405e83e4406b235"
+
+[site]
+bucket = "output"
+entry-point = "workers-site"

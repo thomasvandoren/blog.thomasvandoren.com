@@ -1,7 +1,6 @@
-thomasvandoren.com
-==================
+# tvd.dev
 
-The source for: [thomasvandoren.com](https://thomasvandoren.com/)
+The source for: [tvd.dev](https://tvd.dev)
 
 Development
 -----------
@@ -9,8 +8,8 @@ Development
 Clone the site and pelican-themes:
 
 ```bash
-git clone thomasvandoren/thomasvandoren.com
-cd thomasvandoren.com
+git clone thomasvandoren/tvd.dev
+cd tvd.dev
 git clone https://github.com/getpelican/pelican-themes
 ```
 
@@ -40,7 +39,7 @@ Publishing the site:
 make publish
 
 # Deploy the site
-make clean s3_upload
+make clean wrangle
 ```
 
 License

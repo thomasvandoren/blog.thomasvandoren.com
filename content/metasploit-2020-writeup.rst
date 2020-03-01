@@ -1,7 +1,7 @@
 Metasploit community CTF 2020 write up
 ######################################
 :date: 2020-02-05
-:author: Thomas Van Doren
+:author: tvd
 :category: ctf
 :tags: ctf, security
 :slug: metasploit-2020-writeup

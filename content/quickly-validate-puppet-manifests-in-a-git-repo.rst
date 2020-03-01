@@ -1,7 +1,7 @@
 Quickly validate puppet manifests in a git repo.
 ################################################
 :date: 2012-09-17 22:34
-:author: Thomas Van Doren
+:author: tvd
 :category: tech
 :tags: git, puppet, ruby, tech
 :slug: quickly-validate-puppet-manifests-in-a-git-repo
