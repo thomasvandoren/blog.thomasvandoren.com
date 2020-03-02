@@ -5,7 +5,7 @@ import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
  * 1. we will skip caching on the edge, which makes it easier to
  *    debug.
  * 2. we will return an error message on exception in your Response rather
- *    than the default 404.html page.
+ *    than the default error.html page.
  */
 const DEBUG = false
 
@@ -26,13 +26,14 @@ addEventListener('fetch', event => {
 
 async function handleEvent(event) {
   const url = new URL(event.request.url)
-  let options = {}
 
-  /**
-   * You can add custom logic to how we fetch your assets
-   * by configuring the function `mapRequestToAsset`
-   */
-  // options.mapRequestToAsset = handlePrefix(/^\/docs/)
+  if (url.hostname !== 'tvd.dev') {
+    let newUrl = new URL(url);
+    newUrl.hostname = 'tvd.dev';
+    return Response.redirect(newUrl, 301);
+  }
+
+  let options = {}
 
   try {
     if (DEBUG) {
@@ -55,27 +56,6 @@ async function handleEvent(event) {
     }
 
     return addSecHeaders(new Response(e.message || e.toString(), { status: 500 }))
-  }
-}
-
-/**
- * Here's one example of how to modify a request to
- * remove a specific prefix, in this case `/docs` from
- * the url. This can be useful if you are deploying to a
- * route on a zone, or if you only want your static content
- * to exist at a specific path.
- */
-function handlePrefix(prefix) {
-  return request => {
-    // compute the default (e.g. / -> index.html)
-    let defaultAssetKey = mapRequestToAsset(request)
-    let url = new URL(defaultAssetKey.url)
-
-    // strip the prefix from the path for lookup
-    url.pathname = url.pathname.replace(prefix, '/')
-
-    // inherit all other props from the default request
-    return new Request(url.toString(), defaultAssetKey)
   }
 }
 

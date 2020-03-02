@@ -1,6 +1,0 @@
-name = "thomasvandoren-com"
-type = "webpack"
-account_id = "9108b97dd8df59ec46f276e892c7d76a"
-workers_dev = false
-route = "thomasvandoren.com/*"
-zone_id = "cf9636219ddaf05d535f83868578703b"

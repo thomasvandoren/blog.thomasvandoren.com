@@ -63,7 +63,6 @@ publish:
 	cp error.html googlec4ba6ee14c6d55e5.html $(OUTPUTDIR)
 
 wrangle: publish
-	wrangler publish
-	cd legacy-thomasvandoren.com-redirect && wrangler publish
+	wrangler publish && wrangler publish --env thomasvandorencom
 
 .PHONY: html help clean regenerate serve serve-global devserver publish s3_upload
