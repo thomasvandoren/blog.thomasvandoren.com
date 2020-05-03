@@ -1,0 +1,13 @@
+diff --git a/tuxlite_tbs/templates/base.html b/tuxlite_tbs/templates/base.html
+index 2734cc5..2b292f1 100644
+--- a/tuxlite_tbs/templates/base.html
++++ b/tuxlite_tbs/templates/base.html
+@@ -165,7 +165,7 @@
+ </footer>
+ 
+ </div> <!-- /container -->
+-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
++<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="{{ SITEURL }}/theme/bootstrap-collapse.js"></script>
+ {% include "analytics.html" %}
+ {% include "github.html" %} 
