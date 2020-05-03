@@ -10,7 +10,13 @@ Clone the site and pelican-themes:
 ```bash
 git clone thomasvandoren/tvd.dev
 cd tvd.dev
-git clone https://github.com/getpelican/pelican-themes
+git clone --recurse-submodules https://github.com/getpelican/pelican-themes
+```
+
+Patch the pelican theme to upgrade jquery.
+
+```bash
+( cd pelican-themes/ ; git apply ../jquery_upgrade.patch )
 ```
 
 Install python packages:
