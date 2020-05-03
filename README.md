@@ -25,6 +25,12 @@ Install python packages:
 pipenv install
 ```
 
+Make sure you have wrangler installed:
+
+```bash
+npm i @cloudflare/wrangler -g
+```
+
 When developing the site:
 
 ```bash
