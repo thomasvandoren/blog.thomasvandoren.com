@@ -72,7 +72,7 @@ That showed there was a database called ``flag_card`` (in addition to the ``word
 
     sqlmap -r req.txt --dbms=mysql --level=5 --risk=3 --dump --threads=10 --hex --technique=BEUQ --tamper=between,randomcase,space2comment -D flag_card -T card
 
-Using the blind SQLi it was calculating ~1 character/second, so this was going to take 25+ hours. That's when `echo had a brilliant suggestion <https://twitter.com/nemesis09/status/1224401072225161216>`_ to md5 the content in the database, then brute force the md5 sum since that is only 32 characters. We patched sqlmap to always wrap the image column in a MD5() call (please `tweet me <https://twitter.com/thomasvandoren>`_ if there is a better way to do this with sqlmap!)::
+Using the blind SQLi it was calculating ~1 character/second, so this was going to take 25+ hours. That's when `echo had a brilliant suggestion <https://twitter.com/nemesis09/status/1224401072225161216>`_ to md5 the content in the database, then brute force the md5 sum since that is only 32 characters. We patched sqlmap to always wrap the image column in a MD5() call (please `tweet me <https://twitter.com/tvd0x2a>`_ if there is a better way to do this with sqlmap!)::
 
     diff --git a/lib/core/agent.py b/lib/core/agent.py
     index aad9db4b0..189262695 100644

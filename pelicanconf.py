@@ -24,7 +24,7 @@ AUTHOR_FEED_RSS = None
 SOCIAL = (
     ('GitHub', 'https://github.com/thomasvandoren'),
     ('LinkedIn', 'https://www.linkedin.com/in/thomasvandoren'),
-    ('Twitter', 'https://twitter.com/thomasvandoren'),
+    ('Twitter', 'https://twitter.com/tvd0x2a'),
 )
 
 STATIC_PATHS = [
